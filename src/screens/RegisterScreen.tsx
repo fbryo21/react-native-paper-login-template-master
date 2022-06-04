@@ -51,7 +51,7 @@ const RegisterScreen = ({ navigation }: Props) => {
         returnKeyType="next"
         value={name.value}
         onChangeText={text => setName({ value: text, error: '' })}
-        error={!!name.error}
+        error={!!name.errors}
         errorText={name.error}
       />
 
